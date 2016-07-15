@@ -1,6 +1,7 @@
 ## iOS webview非原生键盘（如搜狗）遮挡输入框解决方案
 
 给输入框绑定focus事件
+
 ```js
 $('input').on('focus', function(){
     setTimeout(function () {
@@ -9,7 +10,7 @@ $('input').on('focus', function(){
 })
 ```
 
-扫一扫看demo
+**扫一扫看demo**
 
 ![二维码](../assets/img/sogou-keyboard.png)
 
