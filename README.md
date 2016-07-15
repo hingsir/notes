@@ -1,3 +1,3 @@
 ### Just some notes.
 
-[Here we go >>](http://hingsir.com/notes/s)
+[Here we go >>](http://hingsir.com/notes)
