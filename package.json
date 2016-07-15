@@ -6,7 +6,7 @@
   "scripts": {
     "start": "gitbook serve",
     "build": "gitbook build",
-    "postbuild": "cp -r _book/ s",
+    "postbuild": "rm -rf s && cp -r _book/ s",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
