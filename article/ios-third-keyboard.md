@@ -8,4 +8,9 @@ $('input').on('focus', function(){
     }, 300);
 })
 ```
+
+扫一扫看demo
+
+![二维码](../assets/img/sogou-keyboard.jpg)
+
 参考：[https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollIntoViewIfNeeded](https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollIntoViewIfNeeded)

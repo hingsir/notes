@@ -1,4 +1,5 @@
 {
+    "root": "article",
     "structure": {
         "readme": "index.md"
     }

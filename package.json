@@ -1,22 +1,22 @@
 {
-  "name": "notebook",
+  "name": "notes",
   "version": "1.0.0",
   "description": "just some notes",
   "main": "index.js",
   "scripts": {
     "start": "gitbook serve",
     "build": "gitbook build",
-    "postbuild": "cp -r _book s",
+    "postbuild": "cp -r _book/ s",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hingsir/notebook.git"
+    "url": "git+https://github.com/hingsir/notes.git"
   },
   "author": "hingsir",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/hingsir/notebook/issues"
+    "url": "https://github.com/hingsir/notes/issues"
   },
-  "homepage": "https://github.com/hingsir/notebook#readme"
+  "homepage": "https://github.com/hingsir/notes#readme"
 }
