@@ -12,6 +12,6 @@ $('input').on('focus', function(){
 
 **扫一扫看demo**
 
-![二维码](http://qr.liantu.com/api.php?w=256&text=http://hingsir.com/demo/sogou-keyboard)
+![二维码](http://qr.liantu.com/api.php?w=256&m=10&text=http://hingsir.com/demo/sogou-keyboard)
 
 参考：[https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollIntoViewIfNeeded](https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollIntoViewIfNeeded)

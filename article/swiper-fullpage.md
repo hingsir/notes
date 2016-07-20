@@ -2,7 +2,7 @@
 
 [swiper](http://www.swiper.com.cn/)是一款强大的移动端触摸滑动插件。但貌似没有类似fullpage那样整屏切换的效果（也可能是我孤陋了），也就是按住某页拖动的时候能同时看到两页，比如下面的栗子
 
-![二维码](http://qr.liantu.com/api.php?w=256&text=http://hingsir.com/demo/swiper-normal)
+![二维码](http://qr.liantu.com/api.php?w=256&m=10&text=http://hingsir.com/demo/swiper-normal)
 
 结合zepto实现整屏切换效果
 
@@ -44,4 +44,4 @@ $(document).swipeUp(function(){
 
 **扫一扫看demo**
 
-![二维码](http://qr.liantu.com/api.php?w=256&text=http://hingsir.com/demo/swiper-fullpage)
+![二维码](http://qr.liantu.com/api.php?w=256&m=10&text=http://hingsir.com/demo/swiper-fullpage)
