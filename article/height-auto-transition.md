@@ -32,6 +32,6 @@ transition对于height来说必须是具体的数值才有效，并不适用于a
 
 **扫一扫看[demo](http://hingsir.com/demo/height-auto-transition)**
 
-![二维码](http://qr.liantu.com/api.php?w=256&m=10&text=http://hingsir.com/demo/height-auto-transition)
+![二维码](http://qr.liantu.com/api.php?w=256&m=10&bg=f7f7f7&text=http://hingsir.com/demo/height-auto-transition)
 
 查看更多解决方案：[http://stackoverflow.com/questions/3508605/how-can-i-transition-height-0-to-height-auto-using-css](http://stackoverflow.com/questions/3508605/how-can-i-transition-height-0-to-height-auto-using-css)
