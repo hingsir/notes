@@ -2,7 +2,7 @@
 <!DOCTYPE HTML>
 <html lang="" >
     <head>
-        <title>介绍 · Notes</title>
+        <title>可编辑div的placeholder实现 · Notes</title>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
@@ -57,8 +57,8 @@
     <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="ios-third-keyboard.html" />
     
+    <link rel="prev" href="height-auto-transition.html" />
     
 
     </head>
@@ -87,7 +87,7 @@
         
         
     
-        <li class="chapter active" data-level="1.1" data-path="./">
+        <li class="chapter " data-level="1.1" data-path="./">
             
                 <a href="./">
             
@@ -139,7 +139,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5" data-path="contenteditable-placeholder.html">
+        <li class="chapter active" data-level="1.5" data-path="contenteditable-placeholder.html">
             
                 <a href="contenteditable-placeholder.html">
             
@@ -182,7 +182,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="." >介绍</a>
+        <a href="." >可编辑div的placeholder实现</a>
     </h1>
 </div>
 
@@ -197,15 +197,29 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <ul><li><a href="ios-third-keyboard.html">iOS webview&#x975E;&#x539F;&#x751F;&#x952E;&#x76D8;&#xFF08;&#x5982;&#x641C;&#x72D7;&#xFF09;&#x906E;&#x6321;&#x8F93;&#x5165;&#x6846;&#x89E3;&#x51B3;&#x65B9;&#x6848;</a>
-</li>
-<li><a href="swiper-fullpage.html">swiper&#x6574;&#x5C4F;&#x5207;&#x6362;&#x6548;&#x679C;</a>
-</li>
-<li><a href="height-auto-transition.html">height: auto &#x8FC7;&#x6E21;&#x6548;&#x679C;&#x5B9E;&#x73B0;</a>
-</li>
-<li><a href="contenteditable-placeholder.html">&#x53EF;&#x7F16;&#x8F91;div&#x7684;placeholder&#x5B9E;&#x73B0;</a>
-</li></ul>
+                                <h2 id="&#x53EF;&#x7F16;&#x8F91;div&#x7684;placeholder&#x5B9E;&#x73B0;">&#x53EF;&#x7F16;&#x8F91;div&#x7684;placeholder&#x5B9E;&#x73B0;</h2><p>&#x6709;&#x4E9B;&#x573A;&#x666F;&#xFF0C;&#x9700;&#x8981;&#x7528;div&#x6A21;&#x62DF;&#x8F93;&#x5165;&#x6846;&#xFF0C;&#x7136;&#x800C;placeholder&#x5C5E;&#x6027;&#x53EA;&#x5BF9;input, textarea&#x6709;&#x6548;&#xFF0C;&#x4E0B;&#x9762;&#x662F;&#x7EAF;CSS&#x5B9E;&#x73B0;&#x65B9;&#x6848;</p><pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">contenteditable</span>=<span class="hljs-string">&quot;true&quot;</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">&quot;&#x8BF7;&#x8F93;&#x5165;&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+<pre><code class="lang-css"><span class="hljs-selector-attr">[contenteditable=true]</span><span class="hljs-selector-pseudo">:empty</span><span class="hljs-selector-pseudo">:not(</span><span class="hljs-selector-pseudo">:focus)</span><span class="hljs-selector-pseudo">:before</span>{
+    <span class="hljs-attribute">content</span>:<span class="hljs-built_in">attr</span>(placeholder);
+    <span class="hljs-attribute">color</span>: <span class="hljs-number">#999</span>;
+}</code></pre>
+<div>
+    <style>
+        [contenteditable=true]{
+            padding: 4px 6px;
+            border: 1px solid #ccc;
+        }
+        [contenteditable=true]:empty:not(:focus):before{
+            content:attr(placeholder);
+            color: #999;
+        }
+    </style>
+    <p>&#x8BD5;&#x8BD5;&#x770B;&#x5427;</p>
+    <div contenteditable="true" placeholder="&#x8BF7;&#x5728;&#x8FD9;&#x968F;&#x4FBF;&#x8F93;&#x5165;&#x70B9;&#x4EC0;&#x4E48;&#x5427;"></div>
+</div>
 
+
+
+<h6 id="&#x53C2;&#x8003;&#xFF1A;">&#x53C2;&#x8003;&#xFF1A;</h6><p><a href="http://stackoverflow.com/questions/20300138/is-it-possible-to-add-placeholder-in-div-tag" target="_blank">http://stackoverflow.com/questions/20300138/is-it-possible-to-add-placeholder-in-div-tag</a></p>
                                 
                                 </section>
                             
@@ -232,10 +246,10 @@
 
             
                 
-                
-                <a href="ios-third-keyboard.html" class="navigation navigation-next navigation-unique" aria-label="Next page: iOS webview非原生键盘（如搜狗）遮挡输入框解决方案">
-                    <i class="fa fa-angle-right"></i>
+                <a href="height-auto-transition.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: height: auto 过渡效果实现">
+                    <i class="fa fa-angle-left"></i>
                 </a>
+                
                 
             
         
@@ -244,7 +258,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"介绍","level":"1.1","depth":1,"next":{"title":"iOS webview非原生键盘（如搜狗）遮挡输入框解决方案","level":"1.2","depth":1,"path":"ios-third-keyboard.md","ref":"ios-third-keyboard.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"root":"article","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"index.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Notes","gitbook":"*"},"file":{"path":"index.md","mtime":"2016-07-27T09:25:02.398Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2016-07-27T09:47:24.813Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"可编辑div的placeholder实现","level":"1.5","depth":1,"previous":{"title":"height: auto 过渡效果实现","level":"1.4","depth":1,"path":"height-auto-transition.md","ref":"height-auto-transition.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"root":"article","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"index.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Notes","gitbook":"*"},"file":{"path":"contenteditable-placeholder.md","mtime":"2016-07-27T09:46:37.564Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2016-07-27T09:47:24.813Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
