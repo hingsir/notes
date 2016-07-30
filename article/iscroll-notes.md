@@ -26,7 +26,7 @@ var scroller = new IScroll('.wrapper',{
 
     找遍了整个官方文档也没看到怎么处理，只得用min-height撑满，并且得稍稍超出容器的高度，可设置min-height: 100.1%
 
-**扫一扫看demo**
+**扫一扫看[demo](http://hingsir.com/demo/iscroll-pull-refresh)**
 
 ![二维码](http://qr.liantu.com/api.php?w=256&m=10&bg=f7f7f7&text=http://hingsir.com/demo/iscroll-pull-refresh)
 
