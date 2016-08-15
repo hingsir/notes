@@ -5,3 +5,4 @@
 * [可编辑div的placeholder实现](contenteditable-placeholder.md)
 * [iscroll 5 使用小记](iscroll-notes.md)
 * [微信webview异步设置网页title](weixin-webview-set-title.md)
+* [在img标签上使用雪碧图](img-tag-with-sprites.md)
