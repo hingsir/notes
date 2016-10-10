@@ -27,8 +27,17 @@ var scroller = new IScroll('.wrapper',{
     找遍了整个官方文档也没看到怎么处理，只得用min-height撑满，并且得稍稍超出容器的高度，可设置min-height: 100.1%
 
 * 别忘记禁用默认的touchmove事件，如果不禁用在iOS和Android上可能没问题，在windows phone上就华丽丽地挂了。
+
 ```js
     document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+```
+
+* surface需添加以下样式禁用默认的触摸行为
+```css
+html {
+    touch-action:none;
+    -ms-touch-action:none;
+}
 ```
 
 **扫一扫看[demo](http://hingsir.com/demo/iscroll-pull-refresh)**
